@@ -2,35 +2,85 @@
 #include <cmath>
 int main(void)
 {
-  double a=0.0,b=0.0,c=0.0;
+  int a=0,b=0,c=0, max=0,mid=0,min=0;
   std::cout << "Introduczca tres numeros enteros:" << std::endl;
   std::cin >> a >> b >> c;
   
-  if (a<=b && a<=c)
-    {
+  if ((a<=b) && (a<=c))
+    {     
       if (b<=c)
 	{
-	  std::cout << a << "," << b << "," << c << std::endl;
+	  min=a;
+	  mid=b;
+	  max=c;
 	}
       else
 	{
-	  std::cout << a << "," << c << "," << b << std::endl;
-	}
+	  min=a;
+	  mid=c;
+	  max=b;
+	}  
     }
-  else
+  
+  if ((b<=a) && (b<=c))
     {
-      if (b<=a && c<=a)
+      if (a<=c)
 	{
-	  if (b<=c)
-	    {
-	      std::cout << b << "," << c << "," << a << std::endl;
-	    }
-	  else
-	    {
-	      std:: cout << c << "," << b << "," << a << std::endl;
-	    }
+	  min=b;
+	  mid=a;
+	  max=c;
+	}
+      else
+	{
+	  min=b;
+	  mid=c;
+	  max=a;
 	}
     }
-
+  
+  
+  if ((c<=a) && (c<=b))
+    {
+      if (a<=b)
+	{
+	  min=c;
+	  mid=a;
+	  max=b;
+	}
+      else
+	{
+	  min=c;
+	  mid=b;
+	  max=a;
+	}
+    }
+  
+  std::cout << min << "," << mid << "," << max << std::endl;
   return 0;
 }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
