@@ -5,7 +5,7 @@ int main(void)
   int a=0,b=0,c=0, max=0,mid=0,min=0;
   std::cout << "Introduczca tres numeros enteros:" << std::endl;
   std::cin >> a >> b >> c;
-  
+  //Combinacion 123 132 a menor
   if ((a<=b) && (a<=c))
     {     
       if (b<=c)
@@ -21,7 +21,8 @@ int main(void)
 	  max=b;
 	}  
     }
-  
+
+  //213 312 b menor
   if ((b<=a) && (b<=c))
     {
       if (a<=c)
@@ -38,7 +39,7 @@ int main(void)
 	}
     }
   
-  
+  //231 321 c menor
   if ((c<=a) && (c<=b))
     {
       if (a<=b)
