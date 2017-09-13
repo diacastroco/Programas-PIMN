@@ -16,9 +16,8 @@ int main(void)
       std::cout << ii << '\t'
 		<< x1 << '\t'
 		<< x0 << '\t'
-		<<f(x1) << '\t'
-	 	<< std::fabs(1-std::fabs(x1/x0))*100 << std::endl;
-      x0=x1;
+		<<f(x1) << '\t' << std::endl;
+	x0=x1;
       if(f(x1)<=esp)
         {
 	  break;
