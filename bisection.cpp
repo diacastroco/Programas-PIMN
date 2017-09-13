@@ -11,14 +11,15 @@ int main(void)
 {
   std::cout.setf(std::ios::scientific);
   std::cout.precision(16); 
-  int ii=0, NMAX=30;      
+  int ii=0, NMAX=50;      
   double xu=-1.0, xl=2.0, xr=0.0;  
-  double eps= 1.0e-6;     
+  double eps= 1.0e-10;     
   
   while (ii<=NMAX)
     {
       xr=0.5*(xl+xu);
-      std::cout << xl << '\t'
+      std::cout << ii << '\t'
+	<< xl << '\t'
 		<< xu << '\t'
 		<< xr << '\t'
 		<< F(xr) << std::endl;
