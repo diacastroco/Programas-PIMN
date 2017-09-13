@@ -13,7 +13,8 @@ int main(void)
   for (int ii=1; ii<=NMAX; ii++)
     {
       x1=x0-(f(x0)/fp(x0));
-      std::cout << x1 << '\t'
+      std::cout << ii << '\t'
+		<< x1 << '\t'
 		<< x0 << '\t'
 		<<f(x1) << '\t'
 	 	<< std::fabs(1-std::fabs(x1/x0))*100 << std::endl;
