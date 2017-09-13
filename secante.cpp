@@ -15,7 +15,8 @@ int main(void)
       xr=xi-(f(xi)*(xi1-xi))/(f(xi1)-f(xi));
       xi=xi1;
       xi1=xr;
-      std::cout << xi << '\t'
+      std::cout << ii << '\t'
+		<< xi << '\t'
                 << xi1 << '\t'
                 << xr << '\t'
                 <<f(xr) << '\t'
