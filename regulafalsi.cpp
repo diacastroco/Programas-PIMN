@@ -19,7 +19,8 @@ int main(void)
   for(ii=0; ii<=NMAX; ++ii)
     { 
       xr=xu-((f(xu)*(xl-xu))/(f(xl)-f(xu)));
-      std::cout	<< xl << '\t'
+      std::cout << ii << '\t'
+		<< xl << '\t'
 		<< xu << '\t'
 		<< xr << '\t'
 		<< f(xr) << std::endl;
