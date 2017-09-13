@@ -19,9 +19,8 @@ int main(void)
 		<< xi << '\t'
                 << xi1 << '\t'
                 << xr << '\t'
-                <<f(xr) << '\t'
-		<< std::fabs(1-std::fabs(xi/xi1))*100 << std::endl;
-      if(std::fabs(f(xr)<=eps))
+                <<f(xr) << '\t' << std::endl;
+	      if(std::fabs(f(xr)<=eps))
 	{
 	  break;
 	}
